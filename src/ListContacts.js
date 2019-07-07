@@ -43,6 +43,10 @@ render(){
         value={this.state.query}
         onChange={(event) => this.updateQuery(event.target.value)}
       />
+      <a href='#create'
+        onClick={()=>{}}
+        className='add-contact'
+      />
     </div>
     {showingContacts.length !== this.props.contacts.length && ( <div className='showing-contacts'>
 <span>Now showing {showingContacts.length} of {this.props.contacts.length} total</span>
